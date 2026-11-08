@@ -12,12 +12,12 @@ Two parts: **1. MIRAJ** (the server, if not already installed) and **2. the skil
 |---|---|
 | Trying it out, small workloads | **Express** (free, 20 GB) |
 | Developing an application with all features | **Developer** (one core, 20 GB, 24 h between restarts) |
-| Production, heavy queries, AI assistants over MCP | **Entreprise** (`miraj.lic` license) |
+| Production, heavy queries, AI assistants over MCP | **Enterprise** (`miraj.lic` license) |
 | Production with replication | **Cluster** (`miraj.lic` license) |
 
 ### Windows
 
-**With the wizard** (Express or Entreprise): run `MIRAJ-<version>-Express-setup.exe` (or `…-Entreprise-setup.exe`). The wizard asks for:
+**With the wizard** (Express or Enterprise): run `MIRAJ-<version>-Express-setup.exe` (or `…-Entreprise-setup.exe`). The wizard asks for:
 
 1. the folders (program and data);
 2. the port (7007 by default) and the instance's SQL language (MIRAJ by default, or PostgreSQL);
@@ -48,7 +48,7 @@ The service is called `miraj-express`; data lives in `/var/lib/miraj-express` an
 
 Open `MIRAJ-<version>-Express-macos-<arch>.pkg`, then **Miraj Manager** for the initial setup (`root` password, port, listening).
 
-### License (Entreprise and Cluster)
+### License (Enterprise and Cluster)
 
 ```text
 miraj-server --root D:\donnees --install-license miraj.lic
@@ -139,7 +139,7 @@ Depending on your need:
 | Need | How |
 |---|---|
 | Claude runs queries through the console | Install `miraj-cli`, give it a restricted account; enter the password through `MIRAJ_PASSWORD` in the environment |
-| Claude explores the database with dedicated tools (Entreprise, Cluster, Developer) | Enable MCP and create a token: see `miraj-mcp/SKILL.md`, part 2 |
+| Claude explores the database with dedicated tools (Enterprise, Cluster, Developer) | Enable MCP and create a token: see `miraj-mcp/SKILL.md`, part 2 |
 | Python application | `pip install miraj-<version>-cp39-abi3-<system>.whl` |
 
 MCP example, in two steps:
